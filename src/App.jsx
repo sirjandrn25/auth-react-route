@@ -1,3 +1,14 @@
-export default function App() {
-  return <h1 className='text-3xl font-bold underline'>Hello world!</h1>
+import React from 'react'
+
+import Layout from './components/Layout'
+import { Outlet } from 'react-router-dom'
+
+const App = () => {
+  return (
+    <Layout>
+      <Outlet />
+    </Layout>
+  )
 }
+
+export default App
